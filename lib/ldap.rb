@@ -21,6 +21,7 @@ class Ldap
   # @option config [String] :base_dn The base DN searches etc. are applied to.
   # @option config [String] :bind_user The username which should be used for bind.
   # @option config [String] :bind_pw The password which should be used for bind.
+  # @option config [Boolean] :force_no_page Disable paged results. Default is false.
   #
   # @example
   #  ldap = Ldap.new
@@ -137,8 +138,9 @@ class Ldap
 
   def connection_params
     params = {
-      host: @host,
-      port: @port,
+      host:          @host,
+      port:          @port,
+      force_no_page: @force_no_page,
     }
 
     if @encryption
@@ -158,6 +160,7 @@ class Ldap
     # might change below
     @host = @config[:host]
     @port = @config[:port]
+    @force_no_page = @config[:force_no_page] || false # default to false for compatibility
 
     parse_host
     handle_ssl_config

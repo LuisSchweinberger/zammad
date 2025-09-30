@@ -233,6 +233,9 @@
                 <td class="settings-list-row-control"><%- @T('User filter') %>
                 <td class="settings-list-control-cell"><input type="text" name="user_filter" class="form-control form-control--small" value="" placeholder="" autocomplete="off">
               <tr>
+                <td class="settings-list-row-control"><%- @T('Disable Paged Results') %>
+                <td class="settings-list-control-cell js-forceNoPage">
+              <tr>
                 <td class="settings-list-row-control"><%- @T('Users without assigned LDAP groups') %>
                 <td class="settings-list-control-cell js-unassignedUsers">
             </tbody>

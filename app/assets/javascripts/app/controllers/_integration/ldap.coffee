@@ -563,7 +563,7 @@ class ConnectionWizard extends App.ControllerWizardModal
         @wizardData.user_attributes = user_attributes
         @wizardData.roles = roles
 
-        for key in ['user_uid', 'user_filter', 'group_uid', 'group_filter']
+        for key in ['user_uid', 'user_filter', 'group_uid', 'group_filter', 'force_no_page']
           @wizardConfig[key] ?= data[key]
 
         @mappingShow()
@@ -594,6 +594,8 @@ class ConnectionWizard extends App.ControllerWizardModal
     @groupRoleForm.find('tbody tr').before(@buildRowsGroupRole(@wizardConfig))
 
     @$('.js-mapping input[name="user_filter"]').val(@wizardConfig.user_filter)
+
+    @$('.js-forceNoPage').html(@createSelection('force_no_page', [ { name: 'No', value: 'false' }, { name: 'Yes', value: 'true' } ], @wizardConfig.force_no_page, undefined, 'false'))
 
     unassigned_users_choices =
       sigup_roles: App.i18n.translatePlain('Assign signup roles')
@@ -647,6 +649,7 @@ class ConnectionWizard extends App.ControllerWizardModal
 
     @wizardConfig.user_filter      = expertSettings.user_filter
     @wizardConfig.unassigned_users = expertSettings.unassigned_users
+    @wizardConfig.force_no_page    = expertSettings.force_no_page
 
     @tryShow()
 

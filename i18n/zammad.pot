@@ -1927,7 +1927,7 @@ msgstr ""
 msgid "Assign follow-ups"
 msgstr ""
 
-#: app/assets/javascripts/app/controllers/_integration/ldap.coffee:599
+#: app/assets/javascripts/app/controllers/_integration/ldap.coffee:601
 msgid "Assign signup roles"
 msgstr ""
 
@@ -2053,7 +2053,7 @@ msgstr ""
 msgid "Attribute"
 msgstr ""
 
-#: app/assets/javascripts/app/controllers/_integration/ldap.coffee:626
+#: app/assets/javascripts/app/controllers/_integration/ldap.coffee:628
 msgid "Attribute '%s' is required in the mapping"
 msgstr ""
 
@@ -2658,7 +2658,7 @@ msgstr ""
 #: app/assets/javascripts/app/controllers/ticket_zoom/article_new.coffee:361
 #: app/assets/javascripts/app/views/integration/exchange_certificate_issue.jst.eco:18
 #: app/assets/javascripts/app/views/integration/exchange_wizard.jst.eco:236
-#: app/assets/javascripts/app/views/integration/ldap_wizard.jst.eco:292
+#: app/assets/javascripts/app/views/integration/ldap_wizard.jst.eco:295
 #: app/assets/javascripts/app/views/knowledge_base/scheduled_widget.jst.eco:4
 #: app/assets/javascripts/app/views/ticket_zoom/sidebar_checklist/show.jst.eco:23
 #: app/assets/javascripts/app/views/widget/invite_user.jst.eco:17
@@ -5441,6 +5441,10 @@ msgstr ""
 msgid "Disable Notifications"
 msgstr ""
 
+#: app/assets/javascripts/app/views/integration/ldap_wizard.jst.eco:236
+msgid "Disable Paged Results"
+msgstr ""
+
 #: app/frontend/apps/desktop/pages/personal-setting/views/PersonalSettingNewBetaUi.vue:36
 msgid "Disable the banner for the BETA switch"
 msgstr ""
@@ -5590,7 +5594,7 @@ msgstr ""
 msgid "Don't load CSS for form. You need to generate your own CSS for the form."
 msgstr ""
 
-#: app/assets/javascripts/app/controllers/_integration/ldap.coffee:600
+#: app/assets/javascripts/app/controllers/_integration/ldap.coffee:602
 msgid "Don't synchronize"
 msgstr ""
 
@@ -8802,7 +8806,7 @@ msgstr ""
 msgid "LDAP integration"
 msgstr ""
 
-#: app/assets/javascripts/app/controllers/_integration/ldap.coffee:847
+#: app/assets/javascripts/app/controllers/_integration/ldap.coffee:850
 msgid "LDAP integration for user management."
 msgstr ""
 
@@ -13396,7 +13400,7 @@ msgid "Save changes"
 msgstr ""
 
 #: app/assets/javascripts/app/views/integration/exchange_wizard.jst.eco:217
-#: app/assets/javascripts/app/views/integration/ldap_wizard.jst.eco:273
+#: app/assets/javascripts/app/views/integration/ldap_wizard.jst.eco:276
 msgid "Save configuration"
 msgstr ""
 
@@ -18651,7 +18655,7 @@ msgstr ""
 msgid "Users with \"%s\""
 msgstr ""
 
-#: app/assets/javascripts/app/views/integration/ldap_wizard.jst.eco:236
+#: app/assets/javascripts/app/views/integration/ldap_wizard.jst.eco:239
 msgid "Users without assigned LDAP groups"
 msgstr ""
 
@@ -19085,7 +19089,7 @@ msgid "With templates you can pre-fill ticket attributes."
 msgstr ""
 
 #: app/assets/javascripts/app/views/integration/exchange_wizard.jst.eco:208
-#: app/assets/javascripts/app/views/integration/ldap_wizard.jst.eco:264
+#: app/assets/javascripts/app/views/integration/ldap_wizard.jst.eco:267
 msgid "With your current configuration the following will happen:"
 msgstr ""
 
@@ -19779,7 +19783,7 @@ msgstr ""
 msgid "can't be used because *_id and *_ids are not allowed"
 msgstr ""
 
-#: app/models/knowledge_base/category.rb:140
+#: app/models/knowledge_base/category.rb:139
 msgid "cannot be a subcategory of the parent category"
 msgstr ""
 
