@@ -649,7 +649,7 @@ class ConnectionWizard extends App.ControllerWizardModal
 
     @wizardConfig.user_filter      = expertSettings.user_filter
     @wizardConfig.unassigned_users = expertSettings.unassigned_users
-    @wizardConfig.force_no_page    = expertSettings.force_no_page
+    @wizardConfig.force_no_page    = expertSettings.force_no_page is 'true'
 
     @tryShow()
 
